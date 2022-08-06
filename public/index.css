@@ -1,0 +1,24 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('https://cdn.dribbble.com/users/1162077/screenshots/4318436/media/1e17490dd92ca27c4a6274ab7bff5b11.png?compress=1&resize=400x300');
+}
+#content{
+    margin-top: 25vh;
+    color: rgb(255, 0, 0);
+    background-color: rgb(115, 216, 159);
+}
+#field{
+    width:350px;
+}
+#contener{
+    width: 50%;
+    
+}

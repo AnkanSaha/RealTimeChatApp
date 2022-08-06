@@ -1,0 +1,19 @@
+doctype html 
+html
+    head
+        title= "Real time web chat"
+        script(src='/chat.js')
+        script(src='/socket.io/socket.io.js')
+        style
+            include ../public/index.css
+            include ../public/bootstrap.min.css
+    body
+        #content(style='width: 60%; height: 300px; margin: 0 0 20px 0; border: solid 1px #999; overflow-y: scroll; margin-top:5vh;')
+        .controls
+        divform-floating.mb-3 
+            input.form-control#name(type="email", placeholder="Enter Your Name")
+        div.input-group.mb-3#contener
+            input.form-control#field(placeholder="To Send Massage, Hit Enter Key or Press Send Button" aria-label="Recipient's username" aria-describedby="button-addon2")
+            button.btn.btn-secondary#send(type="button", value='Send') Send Now
+        script
+            include ../public/bootstrap.bundle.min.js
