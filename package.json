@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deployChat":"pm2 start RealTimeChat.js",
-    "stopChat":"pm2 stop RealTimeChat.js",
-    "devstartChat":"nodemon RealTimeChat.js"
+    "deployChat": "pm2 start RealTimeChat.js",
+    "stopChat": "pm2 stop RealTimeChat.js",
+    "devstartChat": "nodemon RealTimeChat.js"
   },
   "repository": {
     "type": "git",
@@ -32,6 +32,7 @@
     "express": "^4.14.0",
     "jade": "^1.11.0",
     "nodemon": "^2.0.19",
+    "pm2": "^5.2.0",
     "socket.io": "^1.5.0"
   }
 }
