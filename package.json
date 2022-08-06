@@ -7,7 +7,13 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "deployChat": "pm2 start RealTimeChat.js",
     "stopChat": "pm2 stop RealTimeChat.js",
-    "devstartChat": "nodemon RealTimeChat.js"
+    "devstartChat": "nodemon RealTimeChat.js",
+    "nodemon": "npm install nodemon",
+    "pm2": "npm install pm2",
+    "pm2startup":"pm2 startup systemd",
+    "pm2save":"pm2 save",
+    "pm2unstartup":"pm2 unstartup systemd",
+    "pm2ls":"pm2 ls"
   },
   "repository": {
     "type": "git",

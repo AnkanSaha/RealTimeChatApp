@@ -13,7 +13,7 @@ window.onload = function() {
             messages.push(data);
             var html = '';
             for(var i=0; i<messages.length; i++) {
-                html += '<b>' + (messages[i].username ? messages[i].username : 'Server') + ': </b>';
+                html += '<b>' + (messages[i].username ? messages[i].username : 'Bot') + ': </b>';
                 html += messages[i].message + '<br />';
             }
             content.innerHTML = html;
@@ -25,7 +25,7 @@ window.onload = function() {
     // button to send message to socket
     sendButton.onclick = function() {
     	if(name.value == "") {
-            alert("Please type your name!");
+            alert("Please type your Name");
         } else {
         var text = field.value;
         socket.emit('send', { message: text, username: name.value });

@@ -22,3 +22,11 @@ body{
     width: 50%;
     
 }
+
+@media(max-width:897px){
+    #send{
+        margin-top: 2vh;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
