@@ -1,11 +1,12 @@
 window.onload = function() {
 
     var messages = [];
-    var socket = io.connect('https://xclub.org.in');
-    var field = document.getElementById("field");
-    var sendButton = document.getElementById("send");
-    var content = document.getElementById("content");
-    var name = document.getElementById("name");
+    let socket = io.connect('https://xclub.org.in');
+    let field = document.getElementById("field");
+    let sendButton = document.getElementById("send");
+    let content = document.getElementById("content");
+    let name = document.getElementById("name");
+    const PingSound = new Audio('Ping.mp3')
 
     //message listener
     socket.on('message', function (data) {
@@ -13,10 +14,11 @@ window.onload = function() {
             messages.push(data);
             var html = '';
             for(var i=0; i<messages.length; i++) {
-                html += '<b>' + (messages[i].username ? messages[i].username : 'Bot') + ': </b>';
+                html += '<b id="ankan">' + (messages[i].username ? messages[i].username : 'Bot') + ': &nbsp;</b>';
                 html += messages[i].message + '<br />';
             }
             content.innerHTML = html;
+            PingSound.play()
             content.scrollTop = content.scrollHeight;
         } else {
             console.log("There is a problem:", data);

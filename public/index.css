@@ -12,8 +12,10 @@ body{
 }
 #content{
     margin-top: 25vh;
-    color: rgb(255, 0, 0);
-    background-color: rgb(115, 216, 159);
+    color: rgb(0, 0, 0);
+    background-color: rgb(209, 179, 145);
+    padding-left: 1%;
+    padding-top: 1%;
 }
 #field{
     width:350px;
@@ -29,4 +31,11 @@ body{
         margin-left: auto;
         margin-right: auto;
     }
+}
+#ankan{
+    color: rgb(255, 2, 2);
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: oblique;
+    font-stretch: condensed;
 }
