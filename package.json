@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deployChat": "pm2 start RealTimeChat.js",
-    "stopChat": "pm2 stop RealTimeChat.js",
+    "deployChat": "pm2 start RealTimeChat.js --name RealTimeChat",
+    "stopChat": "pm2 stop RealTimeChat.js --name RealTimeChat",
     "devstartChat": "nodemon RealTimeChat.js",
     "nodemon": "npm install nodemon",
     "pm2": "npm install pm2",
