@@ -9,8 +9,10 @@ app.engine('jade', require('jade').__express);
 app.get("/", function(req, res){
     res.render("page");
 });
+
 // use our puclic/chat.js file as listener
 app.use(express.static(__dirname + '/public'));
+
 // Set port
 var midPort = app.listen(port, function () {
     console.log('Node.js listening on port ' + port);
