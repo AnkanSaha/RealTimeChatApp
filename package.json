@@ -35,11 +35,11 @@
   "homepage": "https://github.com/extwiii/Nodejs-Real-time-Chat-App-#readme",
   "dependencies": {
     "bootstrap": "^5.2.0",
-    "express": "^4.14.0",
+    "express": "^4.16.0",
     "jade": "^1.11.0",
     "nodemon": "^2.0.19",
     "pm2": "^5.2.0",
     "request-ip": "^3.3.0",
-    "socket.io": "^1.5.0"
+    "socket.io": "^3.0.0"
   }
 }
